@@ -7,7 +7,8 @@ export const Home = () => {
 
   return (
     <div>
-    <Cards/>
     </div>
   );
 }
+
+

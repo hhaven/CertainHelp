@@ -30,7 +30,7 @@ export const NavBar2 = () => {
   }
 
   return (
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" sticky="top" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
@@ -40,10 +40,10 @@ export const NavBar2 = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-            
+
             <Nav.Link href="home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#link" className={activeLink === 'org' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('org')}>Organizaciones</Nav.Link>
-            <Nav.Link href="#link" className={activeLink === 'camp' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('camp')}>Campañas</Nav.Link>
+            <Nav.Link href="org" className={activeLink === 'org' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('org')}>Organizaciones</Nav.Link>
+            <Nav.Link href="pub" className={activeLink === 'pub' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('pub')}>Campañas</Nav.Link>
             <Nav.Link href="#link" className={activeLink === 'metas' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('metas')}>Metas cumplidas</Nav.Link>
           
             </Nav>

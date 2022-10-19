@@ -22,6 +22,18 @@
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 768px) {
+  body { padding-top: 200px; }
+}
+
+.customCard {
+  background: #3F481F !important;
+}
+
+.customCarousel {
+  padding-bottom: 5em;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
