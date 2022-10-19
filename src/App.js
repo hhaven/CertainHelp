@@ -8,6 +8,7 @@ import { Navbar } from 'react-bootstrap';
 function App() {
   return (
     <>
+    <NavBar2></NavBar2>
       <nav>
         <ul>
           <li>
