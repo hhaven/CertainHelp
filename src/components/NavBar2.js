@@ -8,6 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavBar2 = () => {
 
@@ -33,7 +34,6 @@ export const NavBar2 = () => {
   }
 
   return (
-    <Router> 
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -56,13 +56,13 @@ export const NavBar2 = () => {
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='/pages/registro'>
+              <Link to ="/registro">
                 <button className="vvd"><span>Empieza a ayudar</span></button>
-              </HashLink>
+              </Link>
+
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
   )
 }
