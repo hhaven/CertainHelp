@@ -1,19 +1,24 @@
 import './App.css';
-import {NavBar} from './components/NavBar'
 import {NavBar2} from './components/NavBar2'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {Registro} from './components/Register'
-import {FormE} from './components/FormE'
+import {Registrop} from './pages/registro'
+import {Route, Routes, Link} from "react-router-dom"
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-
-      <NavBar2/>
-      <body>
-        <FormE/>
-      </body>
-    </div>
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to = "/registro">Registro</Link>
+          </li>
+        </ul>
+      </nav>
+    <Routes>
+      <Route path = "/registro" element ={<Registrop/>}></Route>
+    </Routes>
+    </>
   );
 }
 
