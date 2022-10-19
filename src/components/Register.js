@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-
 export const Registro = () => {
   return (
     <div style={{display:'block',padding: 200}}>

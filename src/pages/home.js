@@ -1,12 +1,13 @@
-<div className="App">
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Registro} from '../components/Register'
+import {Cards} from '../components/Cards'
 
-      <NavBar2/>
-      <body>
-        <FormE/>
-      </body>
-    </div> 
+export const Home = () => {
 
-    
-<Routes>
-<Route path = "/registro" element ={Registrop}></Route>
-</Routes>
+  return (
+    <div>
+    <Cards/>
+    </div>
+  );
+}
