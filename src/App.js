@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { Publicaciones } from './pages/publicaciones';
+import { MetodosPago } from './pages/metodospago';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path = "/registro" element ={<Registrop/>}></Route>
             <Route path = "/publicacion" element = {<Publicacion/>}></Route>
             <Route path = "/pub" element = {<Publicaciones/>}></Route>
+            <Route path = "/metodospago" element = {<MetodosPago/>}></Route>
           </Routes>
         </Col>
       </Row>

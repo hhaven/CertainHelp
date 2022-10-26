@@ -7,25 +7,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { Form } from 'react-bootstrap';
+import { DonationCards } from '../components/DonationCards';
 
-export const Publicaciones = () => {
+export const MetodosPago = () => {
 
   return (
 
     <Container>
         <Row>
-                <Form.Label htmlFor="inputPassword5">Buscar</Form.Label>
-                <Form.Control
-                    
-                />
-                <Form.Text id="passwordHelpBlock" muted className = 'customCarousel'>
-                </Form.Text>
-        </Row>
-        <Row>
-            <CarouselPubs/>
-        </Row>
-        <Row>
-            <GridCards/>
+            <DonationCards/>
         </Row>
     </Container>
 
