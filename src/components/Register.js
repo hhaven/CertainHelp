@@ -1,26 +1,31 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { authentication } from '../firebase';
+import {signInWithPopup, GoogleAuthProvider} from "firebase/auth"
+import { Col, Row } from 'react-bootstrap';
 
 export const Registro = () => {
-  return (
-    <div style={{display:'block',padding: 200}}>
-    <Form className="mx-auto">
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
+  const SignInWithGoogle = () =>{
+  
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(authentication, provider)
+    .then((re)=>{
+      console.log(re);
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-    </div>
+  }
+    
+  return (<>
+  <Row className= "align-me">
+    <Col>
+    
+  <Button onClick = {SignInWithGoogle}>Iniciar sesion con Google</Button>
+    </Col>
+  </Row>
+
+  </>
   );
 }

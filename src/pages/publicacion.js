@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
+import Button from 'react-bootstrap/Button';
 
 import { useLocation } from 'react-router-dom';
 import { ProgressBar } from 'react-bootstrap';
@@ -35,6 +36,10 @@ export const Publicacion = () => {
         <Col xs = {3}>
         $ 2,600/3,000
         </Col>
+
+        <Row style = {{padding: '2rem'}}>
+        <Button variant="info" href="/metodospago">Donar</Button>{' '}
+        </Row>
         
     
       </Row>
