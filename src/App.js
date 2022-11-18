@@ -12,6 +12,7 @@ import { Publicaciones } from './pages/publicaciones';
 import { MetodosPago } from './pages/metodospago';
 import { Orgs } from './pages/orgs';
 import { PerfilOng } from './pages/perfilong';
+import { PubMod } from './pages/pubmod';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
             <Route path = "/metodospago" element = {<MetodosPago/>}></Route>
             <Route path = "/orgs" element = {<Orgs/>}></Route>
             <Route path = "/perfilong" element = {<PerfilOng/>}></Route>
-          </Routes>
+            <Route path = "/pubmod" element = {<PubMod/>}></Route>
+            </Routes>
         </Col>
       </Row>
     </Container>
