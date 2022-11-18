@@ -9,11 +9,12 @@ import Button from 'react-bootstrap/Button';
 import { TestData } from '../components/test';
 
 
-export const Registrop = () => {
+export const PubMod = () => {
   
   const [userInfo, setuserInfo] = useState({
     title: '',
     type: '',
+    org: '',
   });
   const onChangeValue = (e) => {
     setuserInfo({
@@ -58,15 +59,17 @@ export const Registrop = () => {
         // complete function ....
         getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
           console.log('File available at', downloadURL);
-          await addDoc(collection(db, "test"), {
+          await addDoc(collection(db, "pubs"), {
             title: userInfo.title,
             type: userInfo.type,
+            org: userInfo.org,
             images: downloadURL
           });
           setuserInfo({
             ...userInfo,
               title:'',
               type: '',
+              org: '',
           });
           setFile(null);
         });
@@ -89,6 +92,7 @@ export const Registrop = () => {
             <option value="enfermedades">Enfermedades</option>
             <option value="otros">Otros</option>
           </select>
+          <input type="text" id="org"  name="org" value={userInfo.org} onChange={onChangeValue} placeholder=" org " required />
           <input type="file" accept=".png, .jpg, .jpeg" onChange={handleImageAsFile}/>
           <button type="submit" className="btn__default btn__add" > Upload </button>  
         </form>

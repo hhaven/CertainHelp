@@ -1,9 +1,9 @@
 import React from "react";
 import { db } from "../firebase";
 import { getDocs, query, collection, q } from "firebase/firestore";
-import { GCardsP } from "../components/GCardsP";
+import { GCOP } from "./GCOP";
 
-export class Publicaciones extends React.Component{
+export class PubsDeOrgs extends React.Component{
     constructor(){
         super();
         this.state = {
@@ -25,7 +25,7 @@ export class Publicaciones extends React.Component{
     }
     render(){
         return(
-            <GCardsP items = {this.state.tableData}/>
+            <GCOP items = {this.state.tableData} name = {this.props.name}/>
         )
     }
 }
