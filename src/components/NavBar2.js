@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo2.png';
+import logo from '../assets/img/l2.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -42,7 +42,7 @@ export const NavBar2 = () => {
             <Nav className="ms-auto">
 
             <Nav.Link href="home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="org" className={activeLink === 'org' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('org')}>Organizaciones</Nav.Link>
+            <Nav.Link href="orgs" className={activeLink === 'orgs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('orgs')}>Organizaciones</Nav.Link>
             <Nav.Link href="pub" className={activeLink === 'pub' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('pub')}>Campañas</Nav.Link>
             <Nav.Link href="#link" className={activeLink === 'metas' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('metas')}>Metas cumplidas</Nav.Link>
           

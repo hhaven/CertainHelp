@@ -27,7 +27,12 @@
 }
 
 .customCard {
-  background: #3F481F !important;
+  background: rgba(52, 122, 140, 0.5) !important;
+}
+.align-me {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .customCarousel {
@@ -43,8 +48,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: white !important;
+  color: black !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -104,14 +109,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: rgba(215, 225, 227, 0.316);
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: black !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -132,14 +137,14 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(52, 122, 140, 0.5);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(52, 122, 140, 0.5);
 }
 .social-icon a::before {
     content: "";
@@ -164,8 +169,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: rgba(52, 122, 140, 0.5);
+  border: 1px solid rgba(52, 122, 140, 0.5);
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -181,14 +186,14 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(52, 122, 140, 0.5);
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: white;
 }
 .navbar-text button:hover::before {
 	content: "";
