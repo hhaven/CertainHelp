@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 
 import { useLocation } from 'react-router-dom';
 
-export const Publicacion = () => {
+export const PerfilOng = () => {
   const location = useLocation()
   const { test } = location.state
   return (
@@ -17,7 +17,7 @@ export const Publicacion = () => {
       <Row style ={{paddingBottom: '2%'}} className = "align-me">
         
       <Col>
-        <Image src = {test.images} style={{height: '15rem', width: '15rem'}}></Image>
+        <Image src = {test.images} style={{height: '30%', width: '30%'}}></Image>
         </Col>
       </Row>
       <Row className = "align-me">

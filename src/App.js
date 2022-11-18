@@ -10,6 +10,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { Publicaciones } from './pages/publicaciones';
 import { MetodosPago } from './pages/metodospago';
+import { Orgs } from './pages/orgs';
+import { PerfilOng } from './pages/perfilong';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route path = "/publicacion" element = {<Publicacion/>}></Route>
             <Route path = "/pub" element = {<Publicaciones/>}></Route>
             <Route path = "/metodospago" element = {<MetodosPago/>}></Route>
+            <Route path = "/orgs" element = {<Orgs/>}></Route>
+            <Route path = "/perfilong" element = {<PerfilOng/>}></Route>
           </Routes>
         </Col>
       </Row>
